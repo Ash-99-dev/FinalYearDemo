@@ -1,24 +1,26 @@
 package com.demo;
 
-import java.util.StringTokenizer;
-
+class multiThread implements Runnable{
+	private String name;
+	multiThread(String name){
+		this.name = name;
+	}
+	public void run() {
+		System.out.println(name+" running at "+Thread.currentThread().getName());
+	}
+}
 public class practiseDemo {
 
 	public static void main(String[] args) {
-		String sentence = "Hii I am me";
-        StringTokenizer st = new StringTokenizer(sentence, " ");
-
-        if (st.hasMoreTokens()) {
-            String firstWord = st.nextToken();
-
-            for (int i = 0; i < firstWord.length(); i++) {
-                System.out.println(firstWord.charAt(i));
-            }
-
-            int lastChar = firstWord.length() - 1;
-            System.out.println("Last character: " + firstWord.charAt(lastChar));
-        }
-
+		Thread mt1 = new Thread(new multiThread("Pasta"));
+		Thread mt2 = new Thread(new multiThread("sandwitch"));
+		Thread mt3 = new Thread(new multiThread("fries"));
+		Thread mt4 = new Thread(new multiThread("burger"));
+		
+		mt1.start();
+		mt2.start();
+		mt3.start();
+		mt4.start();
 	}
 
 }

@@ -1,10 +1,11 @@
 package mainSignature;
 
 public class mainSignatureAllowed {
-
+// how can we call other methods
+	
 	public static void main(String[] args) {
 		mainSignatureAllowed.main();
-		System.out.println("String main allowed argument");
+		System.out.println("String main argument");
 	}
 	
 	public static void main(int[] args) {
