@@ -1,13 +1,13 @@
 package inheritance;
 
-class player{
+class player1{
 	String name;
 	int age;
 	int bestScore;
 	String country;
 	String teamName;
 	
-	player(String name, int age, int bestScore,String country,String teamName){
+	player1(String name, int age, int bestScore,String country,String teamName){
 		this.name = name;
 		this.age = age;
 		this.bestScore = bestScore;
@@ -16,10 +16,10 @@ class player{
 	}
 }
 
-class football extends player{
+class football1 extends player1{
 	int goals;
 	int assist;
-	football(int goals, int assist,String name, int age, int bestScore,String country,String teamName){
+	football1(int goals, int assist,String name, int age, int bestScore,String country,String teamName){
 		super(name, age, bestScore,country,teamName);
 		this.goals = goals;
 		this.assist = assist;
@@ -31,12 +31,12 @@ class football extends player{
 	}
 	
 }
-class cricket extends player{
+class cricket1 extends player1{
 	int centuries;
 	int halfCenturies;
 	int average;
 	int strickRate;
-	cricket(int centuries, int halfCenturies, int average,int strickRate,String name, int age, int bestScore,String country,String teamName){
+	cricket1(int centuries, int halfCenturies, int average,int strickRate,String name, int age, int bestScore,String country,String teamName){
 		super(name, age, bestScore,country,teamName);
 		this.centuries = centuries;
 		this.halfCenturies = halfCenturies;
@@ -54,9 +54,9 @@ public class inheritanceFirst {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new football(5,3,"Aman",30,9,"Canada","Lassi da sag").getDetils();
+		new football1(5,3,"Aman",30,9,"Canada","Lassi da sag").getDetils();
 		
-		cricket c = new cricket(10,6,7,99,"Aditya",40,50,"Bharat","Kaka Punjabi");
+		cricket1 c = new cricket1(10,6,7,99,"Aditya",40,50,"Bharat","Kaka Punjabi");
 		c.getDetils();
 	}
 
