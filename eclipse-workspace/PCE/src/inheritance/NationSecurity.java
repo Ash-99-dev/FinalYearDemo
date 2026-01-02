@@ -5,13 +5,13 @@ class securityForce{
 		System.out.println("Job is to protect - ");
 	}
 	void protect() {
-		//System.out.println("India through");
+		System.out.println("India through");
 	}
 }
 class Army extends securityForce{
-	void protect() {
+	/*void protect() {
 		System.out.print("Land using - ");
-	}
+	}*/
 	void usetank() {
 		System.out.println("Tank");
 	}

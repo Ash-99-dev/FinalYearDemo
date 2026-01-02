@@ -1,21 +1,21 @@
 package polymorphism;
 
-class trainer{
+class trainer1{
 	void teach() {
 		System.out.println("Teaches");
 	}
 }
-class javaTrainer extends trainer{
+class javaTrainer1 extends trainer1{
 	void teach() {
 		System.out.println("Teaches  java");
 	}
 }
-class aptiTrainer extends trainer{
+class aptiTrainer1 extends trainer1{
 	void teach() {
 		System.out.println("Teaches aptitude");
 	}
 }
-class testingTrainer extends trainer{
+class testingTrainer1 extends trainer1{
 	void teach() {
 		System.out.println("Teaches testing");
 	}
@@ -23,12 +23,12 @@ class testingTrainer extends trainer{
 public class Demo1 {
 
 	public static void main(String[] args) {
-		trainer t;
-		t = new javaTrainer();
+		trainer1 t;
+		t = new javaTrainer1();    // Loose coupling or polymorphism
 		t.teach();
-		t = new aptiTrainer();
+		t = new aptiTrainer1();
 		t.teach();
-		t = new testingTrainer();
+		t = new testingTrainer1();
 		t.teach();
 	}
 
