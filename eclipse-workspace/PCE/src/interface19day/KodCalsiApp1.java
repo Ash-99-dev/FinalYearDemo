@@ -1,6 +1,9 @@
 package interface19day;
 
 interface KodCalcii1{
+	// public final static - variable default
+	int a = 10;
+	// public abstract - methods  by default
 	void add();
 	void sub();
 }
