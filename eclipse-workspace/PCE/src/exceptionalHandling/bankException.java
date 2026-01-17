@@ -19,7 +19,7 @@ class Bank1{
 		try {
 		card.transaction1();
 		}catch(Exception e) {
-			System.out.println("info received by bank amount will bbe refunded");
+			System.out.println("info received by bank amount will be refunded");
 		}
 		System.out.println("Banking connection terminated");
 	}
@@ -38,7 +38,7 @@ class ATM1 {
 			System.out.println(c);
 		}catch(Exception e) {
 			System.out.println("Exception occured");
-			throw e;
+			throw e;     // an object is returned 
 		}finally {
 		System.out.println("ATM connection terminated");
 		}

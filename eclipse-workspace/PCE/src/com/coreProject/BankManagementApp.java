@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class BankManagementApp {
 
 	public static void main(String[] args) {
-		String userName = "user";
+		String userName = "ashmit";
 		int password = 12345;
 		
 		Scanner sc = new Scanner(System.in);
