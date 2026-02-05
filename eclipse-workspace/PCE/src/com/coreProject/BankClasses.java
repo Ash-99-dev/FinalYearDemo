@@ -68,7 +68,6 @@ class AmountAdd implements DepositSection{
 			System.out.println("An Exception of less amount");
 		}
 	}
-	
 }
 
 class FetchAccBalance implements CheckBalance{

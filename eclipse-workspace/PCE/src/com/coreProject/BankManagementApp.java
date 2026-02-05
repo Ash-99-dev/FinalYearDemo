@@ -8,10 +8,12 @@ import java.util.stream.Collectors;
 public class BankManagementApp {
 
 	public static void main(String[] args) {
-		String userName = "ashmit";
-		int password = 12345;
-		
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter UserName: ");
+		String userName = sc.next();
+		System.out.println("Enter Password: ");
+		int password = sc.nextInt();
+		
 		
 		Map<Integer, UserAccount> accounts = new HashMap<>();
 		int attempt = 0;
