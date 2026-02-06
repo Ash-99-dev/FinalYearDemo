@@ -28,7 +28,7 @@ public class javaHashMap2 {
 		while(itr.hasNext()) {
 			System.out.print(itr.next()+",");
 		}
-		
+		// sored in collection because .values() return collection type data
 		Collection cv = hm.values();
 		
 		Iterator itr1 = cv.iterator();
