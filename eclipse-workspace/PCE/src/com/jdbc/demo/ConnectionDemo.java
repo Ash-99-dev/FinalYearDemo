@@ -9,12 +9,11 @@ import java.sql.Statement;
 public class ConnectionDemo {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
-		//Loading The Driver
+		//1.  Loading The Driver
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("Driver Loaded Successful");
 		
-		//Establishing The Connection
-		//String url = oracle:jdbc:@localhost:1521:xe(expressEdition);  //for oracle connection
+		//2.  Establishing The Connection
 		String url = "jdbc:mysql://localhost:3306/CollegeJDBC";
 		String user = "root";
 		String pass = "sql225@Ash";
@@ -23,8 +22,10 @@ public class ConnectionDemo {
 		Connection con = DriverManager.getConnection(url, user, pass);
 		System.out.println("Connection established successfully");
 		
-		// create statement
+		//3.  create statement
 		Statement st = con.createStatement();
+		
+		//4.  Result set
 		ResultSet rst = st.executeQuery(sql);
 		while(rst.next()) {
 			System.out.println(rst.getInt(1)+"  "+rst.getString(2)+"  "+rst.getString(3)+"  "+rst.getString(4));
