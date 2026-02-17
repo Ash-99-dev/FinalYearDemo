@@ -58,7 +58,7 @@ public class handleTransaction {
       pst1.executeUpdate();
       pst2.executeUpdate();
       
-      
+      System.out.println("Money Transfered Successfully!");
       con.commit();
       con.setAutoCommit(true);
       
